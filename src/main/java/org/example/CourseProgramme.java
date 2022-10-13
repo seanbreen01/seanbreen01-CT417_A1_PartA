@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.joda.time.DateTime;
 
@@ -10,14 +11,16 @@ import org.joda.time.DateTime;
 public class CourseProgramme {
 
     private String courseName;
-    private List modules;
-    private List students;
+    private ArrayList modules;
+    private ArrayList students;
     private DateTime start, end;    //added dependency and can now use Joda date time stuff
 
     public CourseProgramme(String name, DateTime start, DateTime end){
         courseName = name;
         this.start = start;
         this.end = end;
+        modules = new ArrayList<>();
+        students = new ArrayList<>();
     }
 
     public void addModule(Module module){
