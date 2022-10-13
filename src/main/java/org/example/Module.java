@@ -19,6 +19,7 @@ public class Module {
         moduleID = mID;
         lecturerAssociated = lecturer;
         studentsEnrolled = new ArrayList<>();
+        coursesAssociated = new ArrayList<>();
     }
 
     public void addStudent(Student student){

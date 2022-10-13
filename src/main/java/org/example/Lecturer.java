@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,11 +14,12 @@ public class Lecturer {
     private long id;
     private String userName ="";
     //need to add courses and modules here also
-    private List modulesTeaching;
+    private ArrayList<Module> modulesTeaching;
 
     public Lecturer(String name, int age){
         this.name = name;
         this.age = age;
+        modulesTeaching = new ArrayList<>();
     }
 
     /*
