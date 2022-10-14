@@ -29,4 +29,11 @@ public class CourseProgramme {
     public void addStudent(Student student){
         students.add(student);
     }
+
+    public void getStudentsEnrolled(){
+
+        //Print all students here
+        System.out.println("");
+    }
+
 }

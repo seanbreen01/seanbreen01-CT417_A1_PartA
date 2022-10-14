@@ -36,4 +36,8 @@ public class Module {
         System.out.println(studentsEnrolled.toString());
     }
 
+    public void addCoursesAssociated(String course){coursesAssociated.add(course);}
+
+    public Lecturer getLecturerAssociated(){return lecturerAssociated;}
+
 }
