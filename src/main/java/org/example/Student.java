@@ -11,7 +11,7 @@ public class Student {
     private String name;
     private int age;
     private String dob;     //maybe change from String, revisit
-    private long id;
+    private static long id;
     private String userName ="";
 
     private String course;
@@ -22,11 +22,12 @@ public class Student {
     public Student(String name, int age){
         this.name = name;
         this.age = age;
+        id = generateID();
 
     }
 
 
-    /*
+    /**
      * Returns a String representation of the students username
      * Derived from name and age of given student
      */
@@ -35,12 +36,21 @@ public class Student {
 
     }
 
+    /**
+     *
+     * @return Returns unique ID number for Student
+     */
+    public long generateID(){
+
+        return id++;
+    }
+
     @Override
     /**
      * Update as needed@@@@@@@@@@@@@@@@@@@
      */
     public String toString(){
-        return "\n Student: " + name + " Age: " + age;
+        return "\n Student Name: " + name + " Age: " + age + " Date of Birth:" + dob + " Student ID:" + id;
     }
 
     public void setDOB(String date){
@@ -52,7 +62,7 @@ public class Student {
     }
 
     /**
-     * may not need this method, could be gammy will revisit again
+     *
      * @param module
      */
     public void setModules(Module module){

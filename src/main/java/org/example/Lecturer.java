@@ -11,7 +11,7 @@ public class Lecturer {
     private String name;
     private int age;
     private String dob;     //maybe change from String, revisit
-    private long id;
+    private static long id;
     private String userName ="";
     //need to add courses and modules here also
     private ArrayList<Module> modulesTeaching;
@@ -20,6 +20,7 @@ public class Lecturer {
         this.name = name;
         this.age = age;
         modulesTeaching = new ArrayList<>();
+        id = generateID();
     }
 
     /*
@@ -31,12 +32,23 @@ public class Lecturer {
 
     }
 
+    /**
+     *
+     * @return Returns unique ID number for Lecturer
+     */
+    public long generateID(){
+
+       return id++;
+    }
+
+
     @Override
     /**
      * Update as needed@@@@@@@@@@@@@@@@@@@
      */
     public String toString(){
-        return "\n Student: " + name + " Age: " + age;
+
+        return "\n Lecturer Name: " + name + " Age: " + age + " Date of Birth:" + dob + " Lecturer ID:" + id;
     }
 
     public void setDOB(String date){
