@@ -30,10 +30,26 @@ public class CourseProgramme {
         students.add(student);
     }
 
-    public void getStudentsEnrolled(){
+    public void printStudentsEnrolled(){
 
-        //Print all students here
-        System.out.println("");
+        for(int i=0; i< students.size(); i++){
+            System.out.println(students.get(i));
+        }
+
+    }
+
+    public void printModules(){
+
+        for(int i=0; i< modules.size(); i++){
+            System.out.println(modules.get(i));
+        }
+    }
+
+    @Override
+    public String toString(){
+
+        return "\nCourse Name: "+courseName+"\nCourse start date and time: "+start+"\nCourse end date and time: "+end;
+
     }
 
 }
