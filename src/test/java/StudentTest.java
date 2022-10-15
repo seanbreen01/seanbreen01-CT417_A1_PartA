@@ -21,7 +21,7 @@ public class StudentTest {
         System.out.println("Student toString");
         Student instance = new Student("TestingName", 22);
         instance.setDOB("22/11/2000");
-        String expResult = "\n Student Name: TestingName Age: 22 Date of Birth:22/11/2000 Student ID:0";
+        String expResult = "\n Student Name: TestingName Age: 22 Date of Birth:22/11/2000 Student ID:0 User Name:TestingName22";
         String result = instance.toString();
         assertEquals(expResult, result, "Test failed, toString result not what was expected");
 

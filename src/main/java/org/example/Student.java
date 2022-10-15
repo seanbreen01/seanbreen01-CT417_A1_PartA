@@ -22,6 +22,7 @@ public class Student {
     public Student(String name, int age){
         this.name = name;
         this.age = age;
+        userName = getUsername();
         id = generateID();
 
     }
@@ -32,7 +33,7 @@ public class Student {
      * Derived from name and age of given student
      */
     public String getUsername(){
-        return userName+=name+age;
+        return name+age;
 
     }
 
@@ -47,10 +48,10 @@ public class Student {
 
     @Override
     /**
-     * Update as needed@@@@@@@@@@@@@@@@@@@
+     *
      */
     public String toString(){
-        return "\n Student Name: " + name + " Age: " + age + " Date of Birth:" + dob + " Student ID:" + id;
+        return "\n Student Name: " + name + " Age: " + age + " Date of Birth:" + dob + " Student ID:" + id + " User Name:" + userName;
     }
 
     public void setDOB(String date){

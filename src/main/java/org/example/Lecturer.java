@@ -12,7 +12,7 @@ public class Lecturer {
     private int age;
     private String dob;     //maybe change from String, revisit
     private static long id;
-    private String userName ="";
+    private String userName;
     //need to add courses and modules here also
     private ArrayList<Module> modulesTeaching;
 
@@ -21,6 +21,7 @@ public class Lecturer {
         this.age = age;
         modulesTeaching = new ArrayList<>();
         id = generateID();
+        userName = getUsername();
     }
 
     /*
@@ -28,7 +29,7 @@ public class Lecturer {
      * Derived from name and age of given lecturers
      */
     public String getUsername(){
-        return userName+=name+age;
+        return name+age;
 
     }
 
@@ -48,7 +49,7 @@ public class Lecturer {
      */
     public String toString(){
 
-        return "\n Lecturer Name: " + name + " Age: " + age + " Date of Birth:" + dob + " Lecturer ID:" + id;
+        return "\n Lecturer Name: " + name + " Age: " + age + " Date of Birth:" + dob + " Lecturer ID:" + id + " User Name:" + userName;
     }
 
     public void setDOB(String date){
