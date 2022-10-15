@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7848a3a6-2506-45bc-bea3-f15178bb0e17" name="Changes" comment="Additions to CourseProgramme class for printing more effectively">
+    <list default="true" id="7848a3a6-2506-45bc-bea3-f15178bb0e17" name="Changes" comment="Changes to Lecturer and Student toString methods and corresponding test updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Module.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665840247277</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changes to Lecturer and Student toString methods and corresponding test updates">
+      <created>1665840977409</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665840977409</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +160,7 @@
     <MESSAGE value="Added JUnit tests and cleaned up lecturer and student classes" />
     <MESSAGE value="Further work to module and CourseProgramme classes" />
     <MESSAGE value="Additions to CourseProgramme class for printing more effectively" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additions to CourseProgramme class for printing more effectively" />
+    <MESSAGE value="Changes to Lecturer and Student toString methods and corresponding test updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to Lecturer and Student toString methods and corresponding test updates" />
   </component>
 </project>

@@ -40,4 +40,11 @@ public class Module {
 
     public Lecturer getLecturerAssociated(){return lecturerAssociated;}
 
+    @Override
+    public String toString(){
+
+        return "\n Module Name: " + moduleName + " Module ID: " + moduleID + " Lecturer in Charge of module" + lecturerAssociated;
+    }
+
+
 }
