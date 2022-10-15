@@ -11,7 +11,8 @@ public class Student {
     private String name;
     private int age;
     private String dob;     //maybe change from String, revisit
-    private static long id;
+    private static long count = 0;
+    private long id = 0;
     private String userName ="";
 
     private String course;
@@ -24,6 +25,7 @@ public class Student {
         this.age = age;
         userName = getUsername();
         id = generateID();
+        id=count++;
 
     }
 
@@ -43,7 +45,7 @@ public class Student {
      */
     public long generateID(){
 
-        return id++;
+        return id;
     }
 
     @Override

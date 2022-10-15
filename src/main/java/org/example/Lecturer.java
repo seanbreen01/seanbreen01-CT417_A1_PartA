@@ -11,7 +11,8 @@ public class Lecturer {
     private String name;
     private int age;
     private String dob;     //maybe change from String, revisit
-    private static long id;
+    private static long count = 0;
+    private long id = 0;
     private String userName;
     //need to add courses and modules here also
     private ArrayList<Module> modulesTeaching;
@@ -22,6 +23,7 @@ public class Lecturer {
         modulesTeaching = new ArrayList<>();
         id = generateID();
         userName = getUsername();
+        id=count++;
     }
 
     /*
@@ -39,7 +41,7 @@ public class Lecturer {
      */
     public long generateID(){
 
-       return id++;
+       return id;
     }
 
 
